@@ -1,0 +1,21 @@
+{
+  "name": "coinmarketcap",
+  "version": "1.0.0",
+  "description": "CoinMarketCap data for Gemini CLI — crypto prices, market caps, exchange data, trending coins, and more via the official CoinMarketCap MCP server.",
+  "mcpServers": {
+    "coinmarketcap-data": {
+      "command": "node",
+      "args": ["${extensionPath}${/}proxy.js"],
+      "cwd": "${extensionPath}"
+    }
+  },
+  "contextFileName": "GEMINI.md",
+  "settings": [
+    {
+      "name": "CoinMarketCap API Key",
+      "description": "Your CoinMarketCap API key (X-CMC-MCP-API-KEY). If not set, OAuth authentication will be used instead.",
+      "envVar": "CMC_API_KEY",
+      "sensitive": true
+    }
+  ]
+}
