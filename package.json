@@ -5,7 +5,5 @@
   "type": "module",
   "main": "proxy.js",
   "license": "Apache-2.0",
-  "dependencies": {
-    "mcp-remote": "^0.1.0"
-  }
+  "dependencies": {}
 }
